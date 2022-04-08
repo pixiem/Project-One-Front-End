@@ -1,0 +1,38 @@
+.facebookBtn{
+    margin-top: 10px;
+    background-color: #3b5998;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 234px;
+    padding: 8px;
+    padding-right: 18px;
+    font-family: poppins;
+    font-weight: 600;
+    border-radius: 8px;
+ color: white;
+    border: 1px solid rgb(185, 174, 174);
+}
+.loginBtn{
+    color:white;
+    border: none;
+    font-family: poppins;
+    font-weight: 600;
+    width: 100%;
+    background-color: #181212;
+    border-radius: 10px;
+    padding:10px;
+    box-shadow: rgb(56, 50, 47) 0px 20px 30px -10px;
+}
+.googleBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 234px;
+    padding: 8px;
+    font-family: poppins;
+    font-weight: 600;
+    border-radius: 8px;
+    background-color: white;
+    border: 1px solid rgb(185, 174, 174);
+}

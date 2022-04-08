@@ -1,0 +1,15 @@
+.singlerow{
+    margin-top: 15px;
+    border-radius: 35px;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.callbtn{
+    border: none;
+    background-color: #FF013C;
+    color: white;
+    border-radius: 25px;
+    font-size: 22px;
+    padding: 10px;
+}

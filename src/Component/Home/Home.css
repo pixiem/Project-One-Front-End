@@ -1,0 +1,27 @@
+.moreserv{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 60px;
+    background-color: #f65d19;
+    border: none;
+    color: white;
+}
+.features{
+   
+}
+.owl-dots,.owl-nav{
+    display: none;
+}
+.item{
+width: 200px;
+}
+@media (min-width:767px) { 
+    .features {flex-wrap:wrap;}
+    .bestDrone{
+        width: 65%;
+        
+    }
+    
+  }
