@@ -8,9 +8,39 @@
     border: none;
     color: white;
 }
-.features{
-   
+.SliderOne{
+    background-image:url("../../../public/bannerOne.jpg");
+height: 90vh;
+background-size: 100% 100vh;
+    background-repeat: no-repeat;
 }
+.SliderTwo{
+    background-image:url("../../../public/bannerTwo.jpg");
+height: 90vh;
+background-size: 100% 100vh;
+    background-repeat: no-repeat;
+}
+.SliderThree{
+    background-image:url("../../../public/bannerThree.jpg");
+height: 90vh;
+background-size: 100% 100vh;
+    background-repeat: no-repeat;
+}
+
+
+.slick-arrow{
+    display: none !important;
+  
+}
+.slick-next:before, .slick-prev:before{
+    font-size: 63px;
+    line-height: 1;
+    opacity: .75;
+    color: #fff;
+}
+
+
+
 .owl-dots,.owl-nav{
     display: none;
 }
@@ -23,5 +53,6 @@ width: 200px;
         width: 65%;
         
     }
+    
     
   }

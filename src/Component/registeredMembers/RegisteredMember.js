@@ -53,11 +53,11 @@ const [page, setPAge] = useState(false);
 
                 </div>
                 {page &&<p>Nothing</p>}
-                {loading &&   <p class="placeholder-glow">
-  <span class="placeholder col-8"></span>
-  <span class="placeholder col-8"></span>
-  <span class="placeholder col-8"></span>
-  <span class="placeholder col-8"></span>
+                {loading &&   <p className="placeholder-glow">
+  <span className="placeholder col-8"></span>
+  <span className="placeholder col-8"></span>
+  <span className="placeholder col-8"></span>
+  <span className="placeholder col-8"></span>
 </p>}
          {!loading && <div className='container d-flex flex-column align-items-center'>
           {alluser.map(user => <List again={again}  user={user}></List>)}

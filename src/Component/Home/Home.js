@@ -8,12 +8,16 @@ import SerciceCard from '../ServiceCard/SerciceCard';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+import Slider from "react-slick";
+
 import Footer from '../Footer/Footer';
-import { Loader,Paragraph } from 'rsuite';
+
+
 const Home = () => {
+
     const [services,setServices] = useState([])
     const [drone,setDrone] = useState(false)
-    console.log(services)
+   
     useEffect(() => {
         fetch("https://quiet-bayou-40136.herokuapp.com/getDrone")
           .then(res => res.json())
@@ -29,15 +33,93 @@ const Home = () => {
             }
           )
       }, [])
+      const settings = {
+        dots: true,
+        pauseOnHover: false,
+        fade: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToScroll: 1
+      };
 
     return (
         <div>
             <Navbar></Navbar>
             {/* BANNER */}
-            <div style={{ marginTop: "30px" }}>
-                <span style={{ fontWeight: "700", fontSize: "12px", letterSpacing: "2px" }}>AERIAL PHOTOGRAPHY</span>
-                <h1 style={{ fontFamily: 'Nunito', fontSize: "42px", marginBottom: "20px" }}>There Are Many <b style={{ fontWeight: "900" }}>Great Ways</b> <br />To Use Drones</h1>
-                <img width="100%" src="./banner.png" alt="" />
+            <div className='mt-3'>
+            <Slider {...settings}>
+            <div  className='SliderOne'>
+     <div >
+    <h1 style={{
+        fontFamily:"poppins",
+        marginTop:"20%",
+        fontSize:"54px",
+        color:"white",
+        fontWeight:"500"
+    }}>Something Always Look <br /> Better From Avobe</h1>
+    <button style={{
+        marginTop:"30px",
+        fontFamily:"Montserrat",
+        backgroundColor:'white',
+        padding:"15px 40px",
+        borderRadius:"30px",
+        border:"none",
+        fonSize:"10.5px",
+        fontWeight:"700",
+        letterSpacing:"2px"
+    }}>GET STARTED</button>
+     </div>
+      </div>
+      <div  className='SliderTwo'>
+     <div >
+    <h1 style={{
+        fontFamily:"poppins",
+        marginTop:"20%",
+        fontSize:"54px",
+        color:"white",
+        fontWeight:"600"
+    }}>Best Drone For <br /> Better Depth View</h1>
+    <button style={{
+        marginTop:"30px",
+        fontFamily:"Montserrat",
+        backgroundColor:'white',
+        padding:"15px 40px",
+        borderRadius:"30px",
+        border:"none",
+        fonSize:"10.5px",
+        fontWeight:"700",
+        letterSpacing:"2px"
+    }}>GET STARTED</button>
+     </div>
+      </div>
+      <div  className='SliderThree'>
+     <div >
+    <h1 style={{
+        fontFamily:"poppins",
+        marginTop:"20%",
+        fontSize:"54px",
+        color:"white",
+        fontWeight:"600"
+    }}>Best Drone For <br /> Better Depth View</h1>
+    <button style={{
+        marginTop:"30px",
+        fontFamily:"Montserrat",
+        backgroundColor:'white',
+        padding:"15px 40px",
+        borderRadius:"30px",
+        border:"none",
+        fonSize:"10.5px",
+        fontWeight:"700",
+        letterSpacing:"2px"
+    }}>GET STARTED</button>
+     </div>
+      </div>
+    
+     
+    </Slider>
             </div>
             {/* SERVICES */}
             {drone && <div style={{ paddingBottom: "40px" }}>
@@ -55,11 +137,11 @@ const Home = () => {
                 <span style={{fontSize:"15px"}}>We Rent The Best Drones
                     If you’re looking for a portable drone or a pro tool, <br /> we have a drone for you!</span>
                 </div>
-                <p class="placeholder-glow">
-  <span class="placeholder col-8"></span>
-  <span class="placeholder col-8"></span>
-  <span class="placeholder col-8"></span>
-  <span class="placeholder col-8"></span>
+                <p className="placeholder-glow">
+  <span className="placeholder col-8"></span>
+  <span className="placeholder col-8"></span>
+  <span className="placeholder col-8"></span>
+  <span className="placeholder col-8"></span>
 </p>
 
                 </div>}
@@ -72,22 +154,22 @@ const Home = () => {
                     If you’re looking for a portable drone or a pro tool, <br /> we have a drone for you!</span>
                 </div>
                 <OwlCarousel autoplay={true} autoplayTimeout={2000} className='owl-theme' loop margin={10} nav>
-                    <div class='item'>
+                    <div className='item'>
                         <img src="http://squadrone.bold-themes.com/main-demo/wp-content/uploads/sites/2/2017/12/inner_product_04.png" alt="" />
                     </div>
-                    <div class='item'>
+                    <div className='item'>
                         <img src="http://squadrone.bold-themes.com/main-demo/wp-content/uploads/sites/2/2017/12/inner_product_09.png" alt="" />
                     </div>
-                    <div class='item'>
+                    <div className='item'>
                         <img src="http://squadrone.bold-themes.com/main-demo/wp-content/uploads/sites/2/2017/12/inner_product_02.png" alt="" />
                     </div>
-                    <div class='item'>
+                    <div className='item'>
                         <img src="http://squadrone.bold-themes.com/main-demo/wp-content/uploads/sites/2/2017/12/inner_product_01.png" alt="" />
                     </div>
-                    <div class='item'>
+                    <div className='item'>
                         <img src="http://squadrone.bold-themes.com/main-demo/wp-content/uploads/sites/2/2017/12/inner_product_07.png" alt="" />
                     </div>
-                    <div class='item'>
+                    <div className='item'>
                         <img src="http://squadrone.bold-themes.com/main-demo/wp-content/uploads/sites/2/2017/12/inner_product_09.png" alt="" />
                     </div>
 

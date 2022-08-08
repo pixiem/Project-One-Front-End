@@ -78,8 +78,8 @@ const Placeorder = () => {
                     
                     </div>
                     <button style={{backgroundColor:"black",borderRadius:"10px",padding:"8px",color:"white",border:"none",marginTop:"10px"}} onClick={placeORder}>{!loadings&& <span>Place Order</span> }
-                    {loadings&& <div class="spinner-border text-light" role="status">
-  <span class="sr-only"></span>
+                    {loadings&& <div className="spinner-border text-light" role="status">
+  <span className="sr-only"></span>
 </div> }
                     </button>
                   </div>

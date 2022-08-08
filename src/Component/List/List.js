@@ -33,8 +33,8 @@ console.log(id)
             
             <div style={{textAlign:"right"}} className='col-md-2 col-12 text-end pe-5 '><button 
             onClick={()=>handleDelete(user._id)}
-            className='callbtn shadow-lg'>{!remove &&<span>Remove</span>} {remove &&<div class="spinner-border text-light" role="status">
-            <span class="sr-only"></span>
+            className='callbtn shadow-lg'>{!remove &&<span>Remove</span>} {remove &&<div className="spinner-border text-light" role="status">
+            <span className="sr-only"></span>
           </div>}</button>  </div>
             
             

@@ -67,7 +67,7 @@ const Darshboard = () => {
     <div className='container text-start'>
         <div className='d-flex align-items-center  '>
         <div className='d-flex justify-content-between align-items-center' style={{borderBottom:"3px solid black",width:"125px",marginRight:"5px"}}>
-        <span style={{fontSize:"22px",fontWeight:700}}>Dashboard</span> </div> <span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" title="This is dashboard. You can control your system from here">
+        <span style={{fontSize:"22px",fontWeight:700}}>Dashboard</span> </div> <span className="d-inline-block" tabindex="0" data-bs-toggle="tooltip" title="This is dashboard. You can control your system from here">
   <span  type="button" disabled><BsQuestionOctagonFill size={20}/></span>
 </span></div> <br />
         <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br /> Minima maxime incidunt dolor quasi voluptates deleniti. Repellat <br /> dignissimos possimus molestias rerum?</span>
@@ -116,8 +116,8 @@ const Darshboard = () => {
         </form>
         </center>}
         {manageAllorder && <div>
-            {loading && <div class="mt-5 spinner-border text-dark" role="status">
-  <span class="sr-only"></span>
+            {loading && <div className="mt-5 spinner-border text-dark" role="status">
+  <span className="sr-only"></span>
 </div>}
             {!loading && <div >
                 <div className='container mt-5 d-flex flex-column align-items-center'>

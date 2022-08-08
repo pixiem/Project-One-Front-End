@@ -5,7 +5,7 @@ import "./ServiceCard.css"
 const SerciceCard = (props) => {
     const data = props.data;
     const _id = props.data._id;
-    console.log(_id)
+   
     return (
         <div className='col-md-4 col-12 mt-5 d-flex justify-content-center '>
             <div className='text-start serviceCard '>
